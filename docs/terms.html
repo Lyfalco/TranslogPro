@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kullanım Koşulları — TransLog Pro</title>
+  <meta name="description" content="TransLog Pro kullanım koşulları ve son kullanıcı lisans sözleşmesi."/>
+  <meta name="theme-color" content="#09090F"/>
+  <link rel="icon" type="image/png" href="icon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#09090F;--surface:#131720;--elevated:#1C2130;--muted:#222838;
+      --amber:#DD7C1F;--amber-dim:rgba(221,124,31,.13);
+      --teal:#2EA891;--teal-dim:rgba(46,168,145,.13);
+      --purple:#797BD1;--purple-dim:rgba(121,123,209,.13);
+      --red:#D45649;
+      --text:rgba(255,255,255,.95);--text2:rgba(255,255,255,.60);--text3:rgba(255,255,255,.35);
+      --sep:rgba(255,255,255,.08);--sep2:rgba(255,255,255,.14);
+      --r:16px;--rl:24px;
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.70}
+    a{color:var(--amber);text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{display:block;max-width:100%}
+    nav{
+      position:sticky;top:0;z-index:100;
+      background:rgba(9,9,15,.85);backdrop-filter:blur(22px) saturate(160%);
+      border-bottom:1px solid var(--sep);
+    }
+    .nav-wrap{
+      max-width:860px;margin:0 auto;padding:0 24px;
+      height:64px;display:flex;align-items:center;justify-content:space-between;
+    }
+    .nav-logo{display:flex;align-items:center;gap:10px}
+    .nav-logo img{width:34px;height:34px;border-radius:9px;object-fit:cover;box-shadow:0 4px 14px rgba(221,124,31,.28)}
+    .nav-logo span{font-size:15px;font-weight:800;letter-spacing:-.2px}
+    .nav-right{display:flex;align-items:center;gap:12px}
+    .lang-toggle{display:flex;align-items:center;background:var(--elevated);border:1px solid var(--sep);border-radius:10px;padding:3px;gap:2px}
+    .lang-btn{font-size:12px;font-weight:700;letter-spacing:.4px;padding:5px 11px;border-radius:7px;border:none;cursor:pointer;background:transparent;color:var(--text3);transition:.2s}
+    .lang-btn.active{background:var(--amber);color:#fff}
+    .nav-back{font-size:13px;font-weight:600;color:var(--text2);display:flex;align-items:center;gap:5px;border:1px solid var(--sep);border-radius:9px;padding:7px 13px;transition:color .2s,border-color .2s}
+    .nav-back:hover{color:var(--text);border-color:var(--sep2);text-decoration:none}
+    .wrap{max-width:860px;margin:0 auto;padding:56px 24px 100px}
+    .hero-card{background:var(--surface);border:1px solid var(--sep);border-radius:26px;padding:42px 40px 38px;margin-bottom:48px;position:relative;overflow:hidden}
+    .hero-card::before{content:'';position:absolute;top:-70px;right:-70px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(221,124,31,.10) 0%,transparent 70%);pointer-events:none}
+    .hero-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.55px;text-transform:uppercase;padding:5px 13px;border-radius:99px;background:var(--amber-dim);color:var(--amber);border:1px solid rgba(221,124,31,.22);margin-bottom:18px}
+    .hero-card h1{font-size:clamp(24px,4vw,38px);font-weight:900;letter-spacing:-.5px;margin-bottom:14px}
+    .hero-card .lead{font-size:15px;color:var(--text2);max-width:520px;line-height:1.72}
+    .meta-row{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px}
+    .meta-item{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text3);font-weight:500}
+    .toc{background:var(--surface);border:1px solid var(--sep);border-radius:18px;padding:24px 28px;margin-bottom:48px}
+    .toc h3{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--text3);margin-bottom:16px}
+    .toc-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+    .toc-list li{display:flex;align-items:center;gap:10px}
+    .toc-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--amber);flex-shrink:0}
+    .toc-list a{font-size:14px;font-weight:500;color:var(--text2);transition:color .2s}
+    .toc-list a:hover{color:var(--amber);text-decoration:none}
+    .psec{margin-bottom:52px;scroll-margin-top:82px}
+    .psec-hd{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+    .psec-num{width:36px;height:36px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;background:var(--amber-dim);color:var(--amber)}
+    .psec-num.t{background:var(--teal-dim);color:var(--teal)}
+    .psec-num.p{background:var(--purple-dim);color:var(--purple)}
+    .psec h2{font-size:21px;font-weight:800;letter-spacing:-.3px}
+    .psec p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.78}
+    .psec p:last-child{margin-bottom:0}
+    .psec ul{list-style:none;margin:12px 0;display:flex;flex-direction:column;gap:10px}
+    .psec ul li{display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--text2);line-height:1.65}
+    .psec ul li::before{content:'✓';width:22px;height:22px;border-radius:7px;flex-shrink:0;margin-top:1px;background:var(--teal-dim);color:var(--teal);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800}
+    .psec ul li.no::before{content:'✕';background:rgba(212,86,73,.12);color:var(--red)}
+    .info-box{background:var(--elevated);border:1px solid var(--sep);border-radius:14px;padding:18px 20px;margin:16px 0;font-size:14px;color:var(--text2);line-height:1.68}
+    .info-box.amber{background:var(--amber-dim);border-color:rgba(221,124,31,.22);color:rgba(255,255,255,.80)}
+    .info-box strong{color:var(--text);font-weight:700}
+    .divider{height:1px;background:var(--sep);margin:48px 0}
+    .cta-card{background:linear-gradient(135deg,rgba(42,22,8,.82),rgba(18,14,28,.82));border:1px solid rgba(221,124,31,.22);border-radius:22px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:48px}
+    .cta-card h3{font-size:18px;font-weight:800;margin-bottom:6px}
+    .cta-card p{font-size:14px;color:var(--text2)}
+    .btn-cta{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:13px 24px;border-radius:12px;background:linear-gradient(135deg,var(--amber),#C55E0A);color:#fff;white-space:nowrap;transition:opacity .2s}
+    .btn-cta:hover{opacity:.88;text-decoration:none}
+    .pfooter{border-top:1px solid var(--sep);padding-top:28px;margin-top:56px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--text3)}
+    .pfooter a{color:var(--text3);transition:color .2s}
+    .pfooter a:hover{color:var(--amber);text-decoration:none}
+    @media(max-width:600px){.hero-card{padding:28px 22px}.cta-card{flex-direction:column}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-logo">
+      <img src="icon.png" alt="TransLog Pro"/>
+      <span>TransLog Pro</span>
+    </a>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="tr">TR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="index.html" class="nav-back">
+        <span class="i18n" data-tr="← Ana Sayfa" data-en="← Home">← Ana Sayfa</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero-card">
+    <div class="hero-badge i18n" data-tr="📄 Kullanım Koşulları" data-en="📄 Terms of Use">📄 Kullanım Koşulları</div>
+    <h1 class="i18n" data-tr="Kullanım Koşulları" data-en="Terms of Use">Kullanım Koşulları</h1>
+    <p class="lead i18n"
+       data-tr="TransLog Pro uygulamasını indirerek veya kullanarak aşağıdaki koşulları kabul etmiş olursunuz. Lütfen dikkatlice okuyun."
+       data-en="By downloading or using the TransLog Pro app, you agree to the following terms. Please read them carefully.">
+       TransLog Pro uygulamasını indirerek veya kullanarak aşağıdaki koşulları kabul etmiş olursunuz. Lütfen dikkatlice okuyun.
+    </p>
+    <div class="meta-row">
+      <div class="meta-item">📅 <span class="i18n" data-tr="Son güncelleme: 19 Nisan 2025" data-en="Last updated: April 19, 2025">Son güncelleme: 19 Nisan 2025</span></div>
+      <div class="meta-item">📱 <span class="i18n" data-tr="iOS uygulaması" data-en="iOS application">iOS uygulaması</span></div>
+      <div class="meta-item">📧 ozgurcocuk9@gmail.com</div>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h3 class="i18n" data-tr="İçindekiler" data-en="Table of Contents">İçindekiler</h3>
+    <ul class="toc-list" id="toc-list"></ul>
+  </div>
+
+  <div class="psec" id="s1">
+    <div class="psec-hd"><div class="psec-num">1</div><h2 class="i18n" data-tr="Koşulların Kabulü" data-en="Acceptance of Terms">Koşulların Kabulü</h2></div>
+    <p class="i18n"
+       data-tr="TransLog Pro iOS uygulamasını ('Uygulama') indirerek, yükleyerek veya kullanarak bu Kullanım Koşulları'nı ('Koşullar') kabul etmiş olursunuz. Koşulları kabul etmiyorsanız uygulamayı kullanmayınız."
+       data-en="By downloading, installing, or using the TransLog Pro iOS application ('App'), you agree to these Terms of Use ('Terms'). If you do not agree to these Terms, do not use the App.">
+       TransLog Pro iOS uygulamasını ('Uygulama') indirerek, yükleyerek veya kullanarak bu Kullanım Koşulları'nı ('Koşullar') kabul etmiş olursunuz. Koşulları kabul etmiyorsanız uygulamayı kullanmayınız.
+    </p>
+    <p class="i18n"
+       data-tr="Bu Koşullar, Özgür Yılmaz ('Geliştirici') tarafından sunulan TransLog Pro uygulaması için geçerlidir."
+       data-en="These Terms apply to the TransLog Pro app provided by Özgür Yılmaz ('Developer').">
+       Bu Koşullar, Özgür Yılmaz ('Geliştirici') tarafından sunulan TransLog Pro uygulaması için geçerlidir.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="psec" id="s2">
+    <div class="psec-hd"><div class="psec-num t">2</div><h2 class="i18n" data-tr="Lisans ve İzin Verilen Kullanım" data-en="License & Permitted Use">Lisans ve İzin Verilen Kullanım</h2></div>
+    <p class="i18n"
+       data-tr="Geliştirici, bu Koşullar'a uymak kaydıyla size kişisel ve ticari olmayan amaçlarla uygulamayı kullanmak için sınırlı, münhasır olmayan, devredilemez bir lisans verir."
+       data-en="The Developer grants you a limited, non-exclusive, non-transferable license to use the App for personal and non-commercial purposes, subject to these Terms.">
+       Geliştirici, bu Koşullar'a uymak kaydıyla size kişisel ve ticari olmayan amaçlarla uygulamayı kullanmak için sınırlı, münhasır olmayan, devredilemez bir lisans verir.
+    </p>
+    <ul>
+      <li class="i18n" data-tr="Uygulamayı kendi cihazlarınızda kullanabilirsiniz" data-en="Use the App on your own devices">Uygulamayı kendi cihazlarınızda kullanabilirsiniz</li>
+      <li class="i18n" data-tr="Sefer kayıtlarınızı oluşturabilir ve yönetebilirsiniz" data-en="Create and manage your trip records">Sefer kayıtlarınızı oluşturabilir ve yönetebilirsiniz</li>
+      <li class="i18n" data-tr="PDF raporlar oluşturabilir ve paylaşabilirsiniz" data-en="Generate and share PDF reports">PDF raporlar oluşturabilir ve paylaşabilirsiniz</li>
+      <li class="no i18n" data-tr="Uygulamayı kopyalayamaz, dağıtamaz veya satamassınız" data-en="You may not copy, distribute, or sell the App">Uygulamayı kopyalayamaz, dağıtamaz veya satamazsınız</li>
+      <li class="no i18n" data-tr="Kaynak koda erişmeye veya tersine mühendislik yapmaya çalışamazsınız" data-en="You may not attempt to access source code or reverse engineer the App">Kaynak koda erişmeye veya tersine mühendislik yapmaya çalışamazsınız</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="psec" id="s3">
+    <div class="psec-hd"><div class="psec-num p">3</div><h2 class="i18n" data-tr="Abonelikler ve Satın Almalar" data-en="Subscriptions & Purchases">Abonelikler ve Satın Almalar</h2></div>
+    <p class="i18n"
+       data-tr="TransLog Pro ücretsiz temel plan ve Pro abonelik seçenekleri sunar. Tüm satın almalar Apple App Store aracılığıyla gerçekleştirilir."
+       data-en="TransLog Pro offers a free basic plan and Pro subscription options. All purchases are made through the Apple App Store.">
+       TransLog Pro ücretsiz temel plan ve Pro abonelik seçenekleri sunar. Tüm satın almalar Apple App Store aracılığıyla gerçekleştirilir.
+    </p>
+    <ul>
+      <li class="i18n" data-tr="Aylık ve yıllık abonelikler otomatik olarak yenilenir" data-en="Monthly and yearly subscriptions renew automatically">Aylık ve yıllık abonelikler otomatik olarak yenilenir</li>
+      <li class="i18n" data-tr="Yaşam boyu lisans tek seferlik ödeme ile kalıcıdır" data-en="Lifetime license is a one-time payment and is permanent">Yaşam boyu lisans tek seferlik ödeme ile kalıcıdır</li>
+      <li class="i18n" data-tr="İptal için: iPhone Ayarları › Apple ID › Abonelikler" data-en="To cancel: iPhone Settings › Apple ID › Subscriptions">İptal için: iPhone Ayarları › Apple ID › Abonelikler</li>
+    </ul>
+    <div class="info-box amber">
+      <strong class="i18n" data-tr="İade Politikası:" data-en="Refund Policy:">İade Politikası:</strong>
+      <span class="i18n"
+            data-tr=" Tüm iade talepleri Apple App Store politikasına tabidir. Geliştirici doğrudan iade sağlayamamaktadır. Apple destek: reportaproblem.apple.com"
+            data-en=" All refund requests are subject to Apple App Store policy. The Developer cannot process refunds directly. Apple support: reportaproblem.apple.com">
+            Tüm iade talepleri Apple App Store politikasına tabidir. Geliştirici doğrudan iade sağlayamamaktadır. Apple destek: reportaproblem.apple.com
+      </span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="psec" id="s4">
+    <div class="psec-hd"><div class="psec-num">4</div><h2 class="i18n" data-tr="Kullanıcı Verileri" data-en="User Data">Kullanıcı Verileri</h2></div>
+    <p class="i18n"
+       data-tr="Girdiğiniz tüm sefer verileri, fotoğraflar ve belgeler size aittir. Geliştirici bu verilere erişemez, bunları işleyemez veya üçüncü taraflarla paylaşamaz."
+       data-en="All trip data, photos, and documents you enter belong to you. The Developer cannot access, process, or share this data with third parties.">
+       Girdiğiniz tüm sefer verileri, fotoğraflar ve belgeler size aittir. Geliştirici bu verilere erişemez, bunları işleyemez veya üçüncü taraflarla paylaşamaz.
+    </p>
+    <p class="i18n"
+       data-tr="Gizlilik uygulamalarımızın tamamı için Gizlilik Politikamızı inceleyiniz."
+       data-en="For our full privacy practices, please review our Privacy Policy.">
+       Gizlilik uygulamalarımızın tamamı için <a href="privacy.html">Gizlilik Politikamızı</a> inceleyiniz.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="psec" id="s5">
+    <div class="psec-hd"><div class="psec-num t">5</div><h2 class="i18n" data-tr="Yasak Kullanımlar" data-en="Prohibited Uses">Yasak Kullanımlar</h2></div>
+    <p class="i18n"
+       data-tr="Uygulamayı aşağıdaki amaçlarla kullanamazsınız:"
+       data-en="You may not use the App for any of the following purposes:">
+       Uygulamayı aşağıdaki amaçlarla kullanamazsınız:
+    </p>
+    <ul>
+      <li class="no i18n" data-tr="Yasadışı faaliyetler veya sahtekârlık" data-en="Illegal activities or fraud">Yasadışı faaliyetler veya sahtekârlık</li>
+      <li class="no i18n" data-tr="Uygulamanın güvenliğini aşmaya çalışmak" data-en="Attempting to bypass App security">Uygulamanın güvenliğini aşmaya çalışmak</li>
+      <li class="no i18n" data-tr="Başkalarının gizlilik haklarını ihlal etmek" data-en="Violating others' privacy rights">Başkalarının gizlilik haklarını ihlal etmek</li>
+      <li class="no i18n" data-tr="Uygulamayı ticari amaçla yeniden dağıtmak" data-en="Redistributing the App for commercial purposes">Uygulamayı ticari amaçla yeniden dağıtmak</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="psec" id="s6">
+    <div class="psec-hd"><div class="psec-num p">6</div><h2 class="i18n" data-tr="Sorumluluk Sınırlaması" data-en="Limitation of Liability">Sorumluluk Sınırlaması</h2></div>
+    <p class="i18n"
+       data-tr="Uygulama 'olduğu gibi' sunulmaktadır. Geliştirici, uygulamanın kesintisiz veya hatasız çalışacağını garanti etmez."
+       data-en="The App is provided 'as is'. The Developer does not guarantee that the App will operate without interruption or errors.">
+       Uygulama 'olduğu gibi' sunulmaktadır. Geliştirici, uygulamanın kesintisiz veya hatasız çalışacağını garanti etmez.
+    </p>
+    <p class="i18n"
+       data-tr="Veri kaybı, iş kesintisi veya dolaylı zararlar dahil hiçbir durumda Geliştirici, uygulamanın kullanımından kaynaklanan zararlardan sorumlu tutulamaz. Verilerinizi düzenli olarak yedeklemenizi tavsiye ederiz."
+       data-en="Under no circumstances shall the Developer be liable for damages arising from the use of the App, including data loss, business interruption, or indirect damages. We recommend backing up your data regularly.">
+       Veri kaybı, iş kesintisi veya dolaylı zararlar dahil hiçbir durumda Geliştirici, uygulamanın kullanımından kaynaklanan zararlardan sorumlu tutulamaz. Verilerinizi düzenli olarak yedeklemenizi tavsiye ederiz.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="psec" id="s7">
+    <div class="psec-hd"><div class="psec-num">7</div><h2 class="i18n" data-tr="Koşullardaki Değişiklikler" data-en="Changes to Terms">Koşullardaki Değişiklikler</h2></div>
+    <p class="i18n"
+       data-tr="Bu Koşullar zaman zaman güncellenebilir. Önemli değişiklikler yapıldığında bu sayfada 'Son güncelleme' tarihi yenilenir. Uygulamayı kullanmaya devam etmeniz güncel Koşulları kabul ettiğiniz anlamına gelir."
+       data-en="These Terms may be updated from time to time. When significant changes are made, the 'Last updated' date on this page will be refreshed. Continued use of the App constitutes acceptance of the updated Terms.">
+       Bu Koşullar zaman zaman güncellenebilir. Önemli değişiklikler yapıldığında bu sayfada 'Son güncelleme' tarihi yenilenir. Uygulamayı kullanmaya devam etmeniz güncel Koşulları kabul ettiğiniz anlamına gelir.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="psec" id="s8">
+    <div class="psec-hd"><div class="psec-num t">8</div><h2 class="i18n" data-tr="Geçerli Hukuk" data-en="Governing Law">Geçerli Hukuk</h2></div>
+    <p class="i18n"
+       data-tr="Bu Koşullar Türkiye Cumhuriyeti hukukuna tabidir. Herhangi bir anlaşmazlık durumunda Türkiye mahkemeleri yetkilidir."
+       data-en="These Terms are governed by the laws of the Republic of Turkey. In the event of any dispute, Turkish courts shall have jurisdiction.">
+       Bu Koşullar Türkiye Cumhuriyeti hukukuna tabidir. Herhangi bir anlaşmazlık durumunda Türkiye mahkemeleri yetkilidir.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="psec" id="s9">
+    <div class="psec-hd"><div class="psec-num p">9</div><h2 class="i18n" data-tr="İletişim" data-en="Contact">İletişim</h2></div>
+    <p>
+      <strong class="i18n" data-tr="E-posta: " data-en="Email: ">E-posta: </strong>
+      <a href="mailto:ozgurcocuk9@gmail.com">ozgurcocuk9@gmail.com</a>
+    </p>
+    <p class="i18n"
+       data-tr="Bu Koşullar hakkında sorularınız için yukarıdaki e-posta adresinden bizimle iletişime geçebilirsiniz."
+       data-en="For questions about these Terms, please contact us at the email address above.">
+       Bu Koşullar hakkında sorularınız için yukarıdaki e-posta adresinden bizimle iletişime geçebilirsiniz.
+    </p>
+  </div>
+
+  <div class="cta-card">
+    <div>
+      <h3 class="i18n" data-tr="Sorunuz mu var?" data-en="Have a question?">Sorunuz mu var?</h3>
+      <p class="i18n"
+         data-tr="Kullanım koşulları hakkında her türlü soruyu iletebilirsiniz."
+         data-en="Feel free to reach out with any questions about these terms.">
+         Kullanım koşulları hakkında her türlü soruyu iletebilirsiniz.
+      </p>
+    </div>
+    <a href="index.html#feedback" class="btn-cta i18n" data-tr="✉️ Bize Yaz" data-en="✉️ Write to Us">✉️ Bize Yaz</a>
+  </div>
+
+  <div class="pfooter">
+    <span class="i18n" data-tr="© 2025 TransLog Pro. Tüm hakları saklıdır." data-en="© 2025 TransLog Pro. All rights reserved.">© 2025 TransLog Pro. Tüm hakları saklıdır.</span>
+    <div style="display:flex;gap:20px">
+      <a href="index.html" class="i18n" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a>
+      <a href="privacy.html" class="i18n" data-tr="Gizlilik" data-en="Privacy">Gizlilik</a>
+      <a href="index.html#feedback" class="i18n" data-tr="İletişim" data-en="Contact">İletişim</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const TOC_DATA = {
+  tr: [
+    {href:'#s1',text:'1. Koşulların Kabulü'},
+    {href:'#s2',text:'2. Lisans ve İzin Verilen Kullanım'},
+    {href:'#s3',text:'3. Abonelikler ve Satın Almalar'},
+    {href:'#s4',text:'4. Kullanıcı Verileri'},
+    {href:'#s5',text:'5. Yasak Kullanımlar'},
+    {href:'#s6',text:'6. Sorumluluk Sınırlaması'},
+    {href:'#s7',text:'7. Koşullardaki Değişiklikler'},
+    {href:'#s8',text:'8. Geçerli Hukuk'},
+    {href:'#s9',text:'9. İletişim'},
+  ],
+  en: [
+    {href:'#s1',text:'1. Acceptance of Terms'},
+    {href:'#s2',text:'2. License & Permitted Use'},
+    {href:'#s3',text:'3. Subscriptions & Purchases'},
+    {href:'#s4',text:'4. User Data'},
+    {href:'#s5',text:'5. Prohibited Uses'},
+    {href:'#s6',text:'6. Limitation of Liability'},
+    {href:'#s7',text:'7. Changes to Terms'},
+    {href:'#s8',text:'8. Governing Law'},
+    {href:'#s9',text:'9. Contact'},
+  ]
+};
+
+let curLang = localStorage.getItem('tlp_lang') || 'tr';
+
+function buildTOC(lang) {
+  const list = document.getElementById('toc-list');
+  list.innerHTML = TOC_DATA[lang].map(i =>
+    `<li><a href="${i.href}">${i.text}</a></li>`
+  ).join('');
+}
+
+function applyLang(lang) {
+  curLang = lang;
+  localStorage.setItem('tlp_lang', lang);
+  document.documentElement.lang = lang === 'tr' ? 'tr' : 'en';
+  document.querySelectorAll('.i18n').forEach(el => {
+    const val = el.dataset[lang];
+    if (val !== undefined) el.innerHTML = val;
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+  buildTOC(lang);
+}
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+});
+
+applyLang(curLang);
+</script>
+</body>
+</html>
